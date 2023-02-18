@@ -1,4 +1,4 @@
-let time = 1500; // 25 minutes in seconds
+let time = 15; // 25 minutes in seconds
 let timerInterval;
 
 const startButton = document.getElementById('startButton');
@@ -30,7 +30,7 @@ startButton.addEventListener('click', function() {
 
 modeSwitch.addEventListener('change', function() {
   if (modeSwitch.checked) {
-    time = 6; // 5 minutes in seconds
+    time = 3; // 5 minutes in seconds
     timer.textContent = '05:00';
     modeSwitch.nextElementSibling.textContent = 'Rest';
   } else {
@@ -46,7 +46,7 @@ function updateTimer() {
   let seconds = (time % 60).toString().padStart(2, '0');
   timer.textContent = `${minutes}:${seconds}`;
   if (time == 0) {
-    Push.create('Hello World!');
+    Push.create('Timer is over');
     clearInterval(timerInterval);
     startButton.classList.remove('active');
     playIcon.classList.remove('bi-pause');
