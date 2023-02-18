@@ -6,7 +6,7 @@ const playIcon = startButton.querySelector('i');
 const timer = document.getElementById('timer');
 const modeSwitch = document.getElementById('modeSwitch');
 Push.config({
-    serviceWorker: './customServiceWorker.js', // Sets a custom service worker script
+    serviceWorker: 'service.js', // Sets a custom service worker script
     fallback: function(payload) {
         // Code that executes on browsers with no notification support
         // "payload" is an object containing the 
