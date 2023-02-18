@@ -1,0 +1,18 @@
+{
+  "background_color": "#ffffff",
+  "description": "Pomodoro timer",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "vlad-anisov.github",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "vlad-anisov.github",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [
+    "utilities"
+  ],
+  "screenshots": [],
+  "icons": [],
+  "shortcuts": []
+}
