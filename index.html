@@ -20,18 +20,9 @@
       justify-content: center;
       align-items: center;
     }
-    @media (max-width: 576px) {
-  .btn-lg {
-    padding: 0.75rem 1rem;
-    font-size: 1.25rem;
-  }
-  .h1 {
-    font-size: 2rem;
-  }
-  .form-check-label {
-    font-size: 1.25rem;
-  }
-}
+    * {
+      font-size: 120%;
+    }
   </style>
 </head>
 
@@ -39,12 +30,12 @@
   <div class="container mt-5">
     <div class="row">
       <div class="col text-center">
-        <button id="startButton" class="btn btn-danger btn-lg rounded-circle" style="width: 100px; height: 100px;"><i
-            class="bi-play"></i></button>
+        <button id="startButton" class="btn btn-danger btn-lg rounded-circle" style="width: 200px; height: 200px;"><i
+            class="bi-play" style="font-size: 80px;"></i></button>
         <div id="timer" class="h1 mt-3">25:00</div>
         <div class="form-check form-switch d-flex justify-content-center mt-3">
           <input class="form-check-input" type="checkbox" id="modeSwitch">
-          <label class="form-check-label" for="modeSwitch">Work</label>
+          <label class="form-check-label h1" for="modeSwitch" style="margin-left: 10px;">Work</label>
         </div>
       </div>
     </div>
